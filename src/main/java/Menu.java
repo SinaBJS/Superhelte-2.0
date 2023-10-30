@@ -59,7 +59,7 @@ public class Menu {
                 String isHuman = keyboard.nextLine();
 
                 System.out.println("Hvad er superheltens styrke lvl");
-                double strenght = Double.valueOf(keyboard.nextLine());
+                double strength = Double.valueOf(keyboard.nextLine());
 
 
                 liste.tilføjSuperHelte(superHeroName, realName, superPower, yearCreated, isHuman, strenght);

@@ -4,16 +4,16 @@ public class Superhelt {
     private String superPower;
     private int yearCreated;
     private String isHuman;
-    private double strenght;
+    private double strength;
 
     //Konstruktør
-    public Superhelt (String heroName, String realName,String superPower, int yearCreated, String isHuman, double strenght){
+    public Superhelt (String heroName, String realName,String superPower, int yearCreated, String isHuman, double strength){
         this.heroName = heroName;
         this.realName=realName;
         this.superPower=superPower;
         this.yearCreated=yearCreated;
         this.isHuman=isHuman;
-        this.strenght=strenght;
+        this.strength=strength;
     }
 
     //get metode
@@ -36,8 +36,8 @@ public class Superhelt {
     public String getIsHuman() {
         return isHuman;
     }
-    public double getStrenght(){
-        return strenght;
+    public double getStrength(){
+        return strength;
     }
 
     //set metode
@@ -61,8 +61,8 @@ public class Superhelt {
         this.isHuman = isHuman;
     }
 
-    public void setStrenght(double strenght){
-        this.strenght = strenght;
+    public void setStrength(double strength){
+        this.strength = strength;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Superhelt {
                 + "\n" + "Superhelte kraft = " + superPower
                 + "\n" + "Året han er lavet = " + yearCreated
                 + "\n" + "Er superhelten menneske? = " + isHuman
-                + "\n" + "Superheltens styrke lvl = " + strenght
+                + "\n" + "Superheltens styrke lvl = " + strength
                 + "\n" + "\u2500".repeat(50);
 
     }

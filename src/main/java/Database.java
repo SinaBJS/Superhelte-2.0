@@ -7,8 +7,8 @@ public class Database {
 
     int count;
 
-    public void tilføjSuperHelte(String heroName, String realName, String superPower, int yearCreated, String isHuman, double strenght) {
-        superHelteListe.add(new Superhelt(heroName, realName, superPower, yearCreated, isHuman, strenght));
+    public void tilføjSuperHelte(String heroName, String realName, String superPower, int yearCreated, String isHuman, double strength) {
+        superHelteListe.add(new Superhelt(heroName, realName, superPower, yearCreated, isHuman, strength));
 
     }
 
