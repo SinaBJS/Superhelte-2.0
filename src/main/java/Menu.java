@@ -76,7 +76,7 @@ public class Menu {
             } else if (userChoice == 3) {
                 System.out.println("Søg efter en helt.");
                 String brugerensSøgning = keyboard.nextLine();
-                System.out.println(liste.findHeroName(brugerensSøgning));
+                System.out.println(controller.findHeroName(brugerensSøgning));
 
 
             } else if (userChoice == 2) {
@@ -118,7 +118,7 @@ public class Menu {
                         Superhelt.getSuperPower() + " " +
                         Superhelt.getYearCreated() + " " +
                         Superhelt.getIsHuman() + " " +
-                        Superhelt.getStrenght()
+                        Superhelt.getStrength()
                 );
                 int superheltValg = keyboard.nextInt();
                 keyboard.nextLine();
@@ -156,10 +156,10 @@ public class Menu {
             if (!nyVærdi.isEmpty()) {
                 superheltDerSkalRedigeres.setIsHuman(nyVærdi);
             }
-            System.out.println("Strenght: " + superheltDerSkalRedigeres.getStrenght());
+            System.out.println("Strength: " + superheltDerSkalRedigeres.getStrength());
             nyVærdi = keyboard.nextLine();
             if (!nyVærdi.isEmpty()) {
-                superheltDerSkalRedigeres.setStrenght(Double.parseDouble(nyVærdi));
+                superheltDerSkalRedigeres.setStrength(Double.parseDouble(nyVærdi));
             }
 
             System.out.println(superheltDerSkalRedigeres + " er opdateret.");
