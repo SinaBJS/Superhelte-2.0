@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    Database liste = new Database();
+Controller controller = new Controller();
     Scanner keyboard = new Scanner(System.in);
 
     public void start() {
@@ -62,7 +62,7 @@ public class Menu {
                 double strength = Double.valueOf(keyboard.nextLine());
 
 
-                liste.tilføjSuperHelte(superHeroName, realName, superPower, yearCreated, isHuman, strenght);
+                controller.tilføjSuperHelte(superHeroName, realName, superPower, yearCreated, isHuman, strength);
 
 
                 System.out.println("Superhelt tilføjet til Database");
@@ -80,7 +80,7 @@ public class Menu {
 
 
             } else if (userChoice == 2) {
-                liste.visSuperhelte();
+               controller.visSuperhelte();
 
             } else if (userChoice == 4) {
                 redigerPerson();
@@ -97,9 +97,9 @@ public class Menu {
     public void redigerPerson() {
         //Her kan delvist navn indtastes
         System.out.println("Indtast søgekriterium for person");
-        String brugerInput = keyboard.nextLine();
+        String heroName = keyboard.nextLine();
 
-        ArrayList<Superhelt> søgeResultat = liste.findHeroName(brugerInput);
+        ArrayList<Superhelt> søgeResultat = controller.findHeroName(heroName);
 
         Superhelt superheltDerSkalRedigeres = null;
 
